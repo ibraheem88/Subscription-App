@@ -6,4 +6,5 @@ class Routes {
   static const passwordUpdated = '/passwordUpdated';
   static const onboarding = '/onboarding';
   static const login = '/login';
+  static const register = '/register';
 }

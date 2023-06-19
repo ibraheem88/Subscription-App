@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:subscription_app/screens/forgot_password.dart';
+import 'package:subscription_app/screens/home.dart';
 import 'package:subscription_app/screens/login.dart';
 import 'package:subscription_app/screens/onboarding.dart';
 import 'package:subscription_app/screens/password_updated.dart';
+import 'package:subscription_app/screens/register.dart';
 import 'package:subscription_app/screens/reset_password.dart';
 import 'package:subscription_app/screens/send_otp.dart';
 import 'package:subscription_app/utilis/routes.dart';
@@ -26,13 +28,14 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: Themes.lightTheme,
       routes: {
-        Routes.home: (context) => const Onboarding(),
+        Routes.home: (context) => const Home(),
         Routes.forgotPassword: (context) => const ForgotPassword(),
         Routes.sendOtp: (context) => const SendOtp(),
         Routes.resetPassword: (context) => const ResetPassword(),
         Routes.passwordUpdated: (contex) => const PasswordUpdated(),
         Routes.onboarding: (context) => const Onboarding(),
-        Routes.login: (context) => const Login()
+        Routes.login: (context) => const Login(),
+        Routes.register: (context) => const Register()
       },
       initialRoute: Routes.home,
     );
